@@ -8,3 +8,8 @@ class Queue(object):
 
     def enqueue(self, element):
         return self.queue_list.append(element)
+
+    def dequeue(self):
+        if self.is_empty():
+            return None
+        return self.queue_list.pop(0)
