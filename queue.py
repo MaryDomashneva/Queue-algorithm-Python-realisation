@@ -5,3 +5,6 @@ class Queue(object):
     def is_empty(self):
         if not self.queue_list:
             return True
+
+    def enqueue(self, element):
+        return self.queue_list.append(element)
